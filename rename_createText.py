@@ -13,7 +13,7 @@ toSrc_dir_path = 'F:/r_GFgd191/water/change/new/'                               
 ### 判断输出文件夹是否存在，如果不存在就新建文件夹
 newfolder=os.path.exists(toSrc_dir_path)    
 if not newfolder:
-        os.makedirs(toSrc_dir_path)
+        os.makedirs(toSrc_dir_path)    # os.makedirs新建文件夹
         print("creater !toSrc_dir_path!  success ")
 else:
 	print ('---  There is this folder!  ---')
