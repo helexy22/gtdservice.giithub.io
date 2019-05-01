@@ -82,7 +82,7 @@ class Mydriver:
 
     def set_cookies(self, cookies):
         for cookie in cookies:
-            self.driver.add_cookie({k: cookie[k] for k in {'name', 'value', 'domain', 'path', 'expiry'}})
+            self.driver.add_cookie({k: cookie[k] for k in {'name', 'value', 'domain', 'path', 'expiry'}if k in cookie.keys()})
 
     def get_url(self, url):
         self.driver.get(url)
